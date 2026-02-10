@@ -1,0 +1,207 @@
+/*
+ * @proxyfai/ui — Design Tokens
+ * Single source of truth for all color, radius, and transition tokens.
+ */
+
+:root {
+  /* ==========================================
+     Color Palette — Base
+     ========================================== */
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* Zinc Scale (Primary Gray) */
+  --color-zinc-50: #fafafa;
+  --color-zinc-100: #f4f4f5;
+  --color-zinc-200: #e4e4e7;
+  --color-zinc-300: #d4d4d8;
+  --color-zinc-400: #a1a1aa;
+  --color-zinc-500: #71717a;
+  --color-zinc-600: #52525b;
+  --color-zinc-700: #3f3f46;
+  --color-zinc-800: #27272a;
+  --color-zinc-900: #18181b;
+  --color-zinc-950: #09090b;
+
+  /* Brand Colors */
+  --color-brand-primary: #3b82f6;
+  --color-brand-primary-hover: #2563eb;
+  --color-brand-primary-light: #60a5fa;
+  --color-brand-secondary: #8b5cf6;
+  --color-brand-secondary-hover: #7c3aed;
+
+  /* Semantic Colors */
+  --color-success: #22c55e;
+  --color-success-light: #4ade80;
+  --color-success-bg: rgba(34, 197, 94, 0.1);
+  --color-warning: #f59e0b;
+  --color-warning-light: #fbbf24;
+  --color-warning-bg: rgba(245, 158, 11, 0.1);
+  --color-error: #ef4444;
+  --color-error-light: #f87171;
+  --color-error-bg: rgba(239, 68, 68, 0.1);
+  --color-info: #3b82f6;
+  --color-info-light: #60a5fa;
+  --color-info-bg: rgba(59, 130, 246, 0.1);
+
+  /* Border Radius */
+  --radius: 0.5rem;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 100ms;
+  --transition-normal: 200ms;
+  --transition-slow: 300ms;
+  --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ==========================================
+   Light Theme (default :root)
+   ========================================== */
+
+:root {
+  color-scheme: light;
+
+  --background: var(--color-white);
+  --background-subtle: var(--color-zinc-50);
+  --foreground: var(--color-zinc-900);
+  --foreground-muted: var(--color-zinc-500);
+
+  --surface: var(--color-zinc-50);
+  --surface-hover: var(--color-zinc-100);
+  --surface-active: var(--color-zinc-200);
+  --surface-elevated: var(--color-white);
+
+  --border: var(--color-zinc-200);
+  --border-subtle: var(--color-zinc-100);
+  --border-strong: var(--color-zinc-300);
+
+  --card: var(--color-white);
+  --card-foreground: var(--color-zinc-900);
+  --card-border: var(--color-zinc-200);
+
+  --input: var(--color-zinc-200);
+  --input-border: var(--color-zinc-300);
+  --input-foreground: var(--color-zinc-900);
+  --input-placeholder: var(--color-zinc-400);
+
+  --primary: var(--color-brand-primary);
+  --primary-hover: var(--color-brand-primary-hover);
+  --primary-foreground: var(--color-white);
+
+  --secondary: var(--color-zinc-100);
+  --secondary-hover: var(--color-zinc-200);
+  --secondary-foreground: var(--color-zinc-900);
+
+  --accent: var(--color-zinc-100);
+  --accent-hover: var(--color-brand-primary-hover);
+  --accent-foreground: var(--color-zinc-900);
+
+  --muted: var(--color-zinc-100);
+  --muted-foreground: var(--color-zinc-500);
+
+  --destructive: var(--color-error);
+  --destructive-hover: var(--color-error-light);
+  --destructive-foreground: var(--color-white);
+
+  --ring: var(--color-zinc-400);
+  --ring-offset: var(--color-white);
+
+  --popover: var(--color-white);
+  --popover-foreground: var(--color-zinc-900);
+
+  /* Chart colors */
+  --chart-1: 220 70% 50%;
+  --chart-2: 160 60% 45%;
+  --chart-3: 30 80% 55%;
+  --chart-4: 280 65% 60%;
+  --chart-5: 340 75% 55%;
+
+  /* Sidebar (settings app) */
+  --sidebar: var(--color-zinc-50);
+  --sidebar-foreground: var(--color-zinc-900);
+  --sidebar-primary: var(--color-brand-primary);
+  --sidebar-primary-foreground: var(--color-white);
+  --sidebar-accent: var(--color-zinc-100);
+  --sidebar-accent-foreground: var(--color-zinc-900);
+  --sidebar-border: var(--color-zinc-200);
+  --sidebar-ring: var(--color-zinc-400);
+}
+
+/* ==========================================
+   Dark Theme
+   ========================================== */
+
+.dark {
+  color-scheme: dark;
+
+  --background: var(--color-zinc-950);
+  --background-subtle: var(--color-zinc-900);
+  --foreground: var(--color-zinc-100);
+  --foreground-muted: var(--color-zinc-400);
+
+  --surface: var(--color-zinc-900);
+  --surface-hover: var(--color-zinc-800);
+  --surface-active: var(--color-zinc-700);
+  --surface-elevated: var(--color-zinc-800);
+
+  --border: var(--color-zinc-800);
+  --border-subtle: var(--color-zinc-700);
+  --border-strong: var(--color-zinc-600);
+
+  --card: var(--color-zinc-900);
+  --card-foreground: var(--color-zinc-100);
+  --card-border: var(--color-zinc-800);
+
+  --input: var(--color-zinc-800);
+  --input-border: var(--color-zinc-700);
+  --input-foreground: var(--color-zinc-100);
+  --input-placeholder: var(--color-zinc-500);
+
+  --primary: var(--color-brand-primary);
+  --primary-hover: var(--color-brand-primary-hover);
+  --primary-foreground: var(--color-white);
+
+  --secondary: var(--color-zinc-800);
+  --secondary-hover: var(--color-zinc-700);
+  --secondary-foreground: var(--color-zinc-100);
+
+  --accent: var(--color-zinc-800);
+  --accent-hover: var(--color-brand-primary-hover);
+  --accent-foreground: var(--color-zinc-100);
+
+  --muted: var(--color-zinc-800);
+  --muted-foreground: var(--color-zinc-400);
+
+  --destructive: var(--color-error);
+  --destructive-hover: var(--color-error-light);
+  --destructive-foreground: var(--color-white);
+
+  --ring: var(--color-zinc-400);
+  --ring-offset: var(--color-zinc-900);
+
+  --popover: var(--color-zinc-800);
+  --popover-foreground: var(--color-zinc-100);
+
+  /* Chart colors */
+  --chart-1: 220 70% 50%;
+  --chart-2: 160 60% 45%;
+  --chart-3: 30 80% 55%;
+  --chart-4: 280 65% 60%;
+  --chart-5: 340 75% 55%;
+
+  /* Sidebar (settings app) */
+  --sidebar: var(--color-zinc-900);
+  --sidebar-foreground: var(--color-zinc-100);
+  --sidebar-primary: var(--color-brand-primary);
+  --sidebar-primary-foreground: var(--color-white);
+  --sidebar-accent: var(--color-zinc-800);
+  --sidebar-accent-foreground: var(--color-zinc-100);
+  --sidebar-border: var(--color-zinc-800);
+  --sidebar-ring: var(--color-zinc-400);
+}
