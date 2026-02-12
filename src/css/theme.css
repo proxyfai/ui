@@ -1,5 +1,5 @@
 /*
- * @proxyfai/ui — Reference @theme inline block
+ * @proxifai/ui — Reference @theme inline block
  *
  * DO NOT import this file directly. Each consuming app should copy/adapt
  * the @theme inline block below into its own globals.css, adding any
@@ -8,9 +8,9 @@
  * Example usage in your app's globals.css:
  *
  *   @import "tailwindcss";
- *   @import "@proxyfai/ui/tokens.css";
- *   @import "@proxyfai/ui/animations.css";
- *   @source "../node_modules/@proxyfai/ui/src";
+ *   @import "@proxifai/ui/tokens.css";
+ *   @import "@proxifai/ui/animations.css";
+ *   @source "../node_modules/@proxifai/ui/src";
  *
  *   @theme inline {
  *     ... (copy the block below) ...

@@ -1,5 +1,5 @@
 {
-  "name": "@proxyfai/ui",
+  "name": "@proxifai/ui",
   "version": "0.1.0",
   "description": "Shared design system for ProxifAI apps",
   "type": "module",
@@ -65,7 +65,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/proxyfai/ui.git"
+    "url": "https://github.com/proxifai/ui.git"
   },
   "license": "UNLICENSED"
 }
