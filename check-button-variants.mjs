@@ -15,7 +15,7 @@ async function checkButtonVariants() {
     await page.waitForTimeout(1000);
     
     // Get all the button story links
-    const content = await page.content();
+    const _content = await page.content();
     console.log('Page loaded, looking for Variants link...');
     
     // Try to find the Variants link more carefully

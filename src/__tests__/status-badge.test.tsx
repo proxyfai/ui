@@ -95,7 +95,7 @@ describe("StatusBadge", () => {
 
   it("returns null for unknown status", () => {
     const { container } = render(
-      <StatusBadge status={"unknown" as any} config={config} />
+      <StatusBadge status={"unknown" as unknown as Parameters<typeof StatusBadge>[0]["status"]} config={config} />
     )
     expect(container.innerHTML).toBe("")
   })

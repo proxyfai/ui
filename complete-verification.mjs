@@ -29,7 +29,7 @@ async function completeVerification() {
           statusFound = true;
           break;
         }
-      } catch (e) {
+      } catch {
         // Try next URL
       }
     }
@@ -59,7 +59,7 @@ async function completeVerification() {
           navFound = true;
           break;
         }
-      } catch (e) {
+      } catch {
         // Try next URL
       }
     }
@@ -89,7 +89,7 @@ async function completeVerification() {
           tokenFound = true;
           break;
         }
-      } catch (e) {
+      } catch {
         // Try next URL
       }
     }

@@ -42,14 +42,9 @@ function ThemeProvider({
   React.useEffect(() => {
     const root = document.documentElement
 
-    let resolved: "light" | "dark" = "dark"
-    if (theme === "system") {
-      resolved = window.matchMedia("(prefers-color-scheme: dark)").matches
-        ? "dark"
-        : "light"
-    } else {
-      resolved = theme
-    }
+    const resolved: "light" | "dark" = theme === "system"
+      ? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light")
+      : theme
 
     setResolvedTheme(resolved)
     root.classList.remove("light", "dark")
